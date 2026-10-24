@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KSI.Core.Api/KSI.Core.Api.csproj" />
+    <Project Path="src/KSI.Core.Mod/KSI.Core.Mod.csproj" />
+    <Project Path="src/KSI.Core/KSI.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KSI.Core.Tests/KSI.Core.Tests.csproj" />
+  </Folder>
+</Solution>

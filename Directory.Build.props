@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <KsaReferencePath Condition="'$(KsaReferencePath)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\Import'))</KsaReferencePath>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(NeedsKsaReferences)' == 'true'">
+    <Reference Include="$(KsaReferencePath)\KSA.dll" Private="false" />
+    <Reference Include="$(KsaReferencePath)\Brutal.*.dll" Private="false" />
+  </ItemGroup>
+</Project>

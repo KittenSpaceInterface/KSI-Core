@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>KSI.Core.Mod</AssemblyName>
+    <NeedsKsaReferences>true</NeedsKsaReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../KSI.Core/KSI.Core.csproj" />
+    <PackageReference Include="StarMap.API" Version="0.3.6" />
+    <Reference Include="$(KsaReferencePath)\Planet.Render.Core.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="mod.toml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

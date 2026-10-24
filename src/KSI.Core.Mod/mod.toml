@@ -1,0 +1,9 @@
+name = "KSI-Core"
+
+[StarMap]
+EntryAssembly = "KSI.Core.Mod"
+ExportedAssemblies = ["KSI.Core.Api"]
+
+[[StarMap.ModDependencies]]
+ModId = "ModMenu"
+Optional = true
