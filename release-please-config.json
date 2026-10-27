@@ -1,0 +1,19 @@
+{
+  "bootstrap-sha": "610ec6dfaae123ffb9c3f376b0d55a437aa2d80b",
+  "release-type": "simple",
+  "include-component-in-tag": false,
+  "include-v-in-tag": true,
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": false,
+  "packages": {
+    ".": {
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "src/KSI.Core.Api/KSI.Core.Api.csproj",
+          "xpath": "/Project/PropertyGroup/Version"
+        }
+      ]
+    }
+  }
+}

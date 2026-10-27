@@ -51,3 +51,12 @@ interface has ever been loaded, the first registered interface is preselected.
 Without ModMenu, KSI-Core opens the same configuration window automatically.
 Choose **None** in the selector and click **Unload interface** to stop the active
 UI. This retains the provider so it can be loaded again later.
+
+## Releases
+
+Release Please runs on pushes to `main`. It reads Conventional Commits and opens
+a release pull request that updates the changelog, release manifest, and
+`KSI.Core.Api` package version together. Merging that pull request creates a
+GitHub release and a `v` prefixed tag. The manifest starts at `0.2.1`, matching
+the current API package version. The workflow does not publish the NuGet package;
+packaging and publication are separate steps.
