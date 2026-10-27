@@ -55,8 +55,8 @@ UI. This retains the provider so it can be loaded again later.
 ## Releases
 
 Release Please runs on pushes to `main`. It reads Conventional Commits and opens
-a release pull request that updates the changelog, release manifest, and
-`KSI.Core.Api` package version together. Merging that pull request creates a
-GitHub release and a `v` prefixed tag. The manifest starts at `0.2.1`, matching
-the current API package version. The workflow does not publish the NuGet package;
-packaging and publication are separate steps.
+a release pull request that updates the changelog and release manifest. Merging
+that pull request creates a GitHub release and a `v` prefixed tag. The first
+release targets `v0.0.1`; the manifest starts at `0.0.0` to bootstrap that PR.
+The `KSI.Core.Api` NuGet package has its own version and is not changed or
+published by this workflow.
